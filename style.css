@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,100;1,300;1,700&display=swap');
+
+:root{
+    --main-color: #C0C0C0;
+    --black-color: #c0c0c0;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+/*! base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--main-color);
+    height: 200vh;
+ }
+section{
+    padding: 2.5rem 7%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 1.7rem;
+    font-size: 1.3rem;
+    background-color: var(--black-color);
+    cursor: pointer;
+    color:#fff
+}
+/* header start */
+
+.logo img {
+    height: 7rem;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a{
+    margin: 0.6rem;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+    
+/*! header end */
+/*! anasayfa start */
+.anasayfa {
+    min-height: 110vh;
+    background: url(../images/anasayfa.jpg);
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -12rem;
+    display: flex;
+    align-items: center;   
+}
+
+ .anasayfa .content{
+    max-width: 60rem;
+    
+ }
+ .anasayfa .content h3 {
+    font-size: 6rem;
+    color:rgba(0, 0, 0, 0.75);
+    align-items: center;
+ }
+ .anasayfa .content p{
+    font-size: 2.5rem;
+    font-weight: 350;
+    line-height: 2.0;
+    padding: 1rem 0;
+    color:rgba(255, 255, 255, 0.899);
+ }
+
+/*! anasayfa end */
+
+/* GEZİLECEK YERLER START */
+   
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.menu .box-container .box img {
+    width: 50%;
+    object-fit: cover;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+
+/* GEZİLECEK YERLER end */
+
+
+
+
